@@ -8,3 +8,5 @@ import语句和package语句对源文件中定义的所有类都有效。在同�
 Import语句
 例如，下面的命令行将会命令编译器载入java_installation/java/io路径下的所有类
 import java.io.*;
+
+http://www.runoob.com/java/java-basic-datatypes.html
