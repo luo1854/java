@@ -1,1 +1,15 @@
+1. String 
+创建String类对象不需要new关键字。比如:
+实际上，当你写出一个"Hello World"表达式时，内存中就已经创建了该对象。如果使用new String("Hello World!")，会重复创建出一个字符串对象。
+String类是唯一一个不需要new关键字来创建对象的类。
+
+String类对象是不可变对象(immutable object)。然而，String类对象确实有编辑字符串的功能，比如replace()。这些编辑功能是通过创建一个新的对象来实现的，
+而不是对原有对象进行修改。比如:
+s = "Hello World";
+s = s.replace("World", "Universe");
+右边对s.replace()的调用将创建一个新的字符串"Hello Universe!"，并返回该对象(的引用)。通过赋值，引用s将指向该新的字符串。
+如果没有其他引用指向原有字符串"Hello World!"，原字符串对象将被垃圾回收。
+
+synchronized(this)以及非static的synchronized方法（至于static synchronized方法请往下看），只能防止多个线程同时执行同一个对象的同步代码段。
+
 RTTI（Run-Time Type Identification)，通过运行时类型信息程序能够使用基类的指针或引用来检查这些指针或引用所指的对象的实际派生类型。
